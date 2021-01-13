@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CubicFtCalComponent } from './cubic-ft-cal/cubic-ft-cal.component';
+import { SquareFtCalComponent } from './square-ft-cal/square-ft-cal.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CubicFtCalComponent,
+    SquareFtCalComponent
   ],
   imports: [
     BrowserModule,

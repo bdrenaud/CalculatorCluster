@@ -1,0 +1,19 @@
+<div class="row">
+    <h1 style="font-weight: 900">Square Foot Calculator</h1>
+</div>
+<form>
+    <div class="form-group">
+        <label>Length</label>
+        <input class="form-control" type="number" [value]="lengthValue" (change)="updateLength($event.target.value)">
+     </div>    
+     <div class="form-group">
+        <label>Width</label>
+        <input class="form-control" type="number" [value]="widthValue" (change)="updateWidth($event.target.value)">
+    </div>   
+</form>
+<div class="row">
+    <button class="btn btn-primary" (click)="calculate()">Calculate</button>
+</div>
+<div class="row">
+    <h2>Calculation: {{endCal}}</h2>
+</div>
